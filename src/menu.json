@@ -1,0 +1,92 @@
+{
+    "egg dishes": [
+      {
+        "name": "Huevos Rancheros",
+        "description": "Two eggs, refried beans, ranchero sauce, avocado, and cotija cheese served on a corn tortilla.",
+        "price": "$10.99"
+      },
+      {
+        "name": "Classic Eggs Benedict",
+        "description": "Two poached eggs, Canadian bacon, and hollandaise sauce on an English muffin.",
+        "price": "$12.99"
+      },
+      {
+        "name": "Avocado Toast with Fried Egg",
+        "description": "Toasted sourdough bread, mashed avocado, cherry tomatoes, and a fried egg.",
+        "price": "$9.99"
+      },
+      {
+        "name": "Frittata of the Day",
+        "description": "Chef's daily selection of vegetables, cheese, and eggs baked together. Served with mixed greens.",
+        "price": "$11.99"
+      }
+    ],
+    "sandwiches": [
+      {
+        "name": "BLTE",
+        "description": "Bacon, lettuce, tomato, and a fried egg on sourdough bread.",
+        "price": "$9.99"
+      },
+      {
+        "name": "Fried Egg Sandwich",
+        "description": "Two fried eggs, bacon, cheddar cheese, and arugula on a brioche bun.",
+        "price": "$10.99"
+      },
+      {
+        "name": "Egg Salad Sandwich",
+        "description": "Homemade egg salad, lettuce, and tomato on a croissant.",
+        "price": "$8.99"
+      }
+    ],
+    "sides": [
+      {
+        "name": "Hash Browns",
+        "description": "Crispy fried potatoes.",
+        "price": "$3.99"
+      },
+      {
+        "name": "Bacon",
+        "description": "Three strips of crispy bacon.",
+        "price": "$2.99"
+      },
+      {
+        "name": "Toast",
+        "description": "Choice of sourdough, wheat, or rye.",
+        "price": "$2.99"
+      }
+    ],
+    "signature cocktails": [
+      {
+        "name": "The Morning Buzz",
+        "description": "Vodka, espresso, Kahlua, and cream.",
+        "price": "$9.99"
+      },
+      {
+        "name": "Huevos Mary",
+        "description": "Our twist on the classic Bloody Mary, made with tequila, tomato juice, hot sauce, and a splash of lime.",
+        "price": "$10.99"
+      },
+      {
+        "name": "Egg-noggin",
+        "description": "A creamy, boozy eggnog made with bourbon, brandy, eggs, cream, and nutmeg.",
+        "price": "$8.99"
+      }
+    ],
+    "craft beers": [
+      {
+        "name": "Eggstra Special IPA",
+        "description": "A hoppy, citrusy India Pale Ale brewed with egg whites.",
+        "price": "$7.99"
+      },
+      {
+        "name": "Crack an Egg Brown Ale",
+        "description": "A rich and malty brown ale brewed with toasted oats and chocolate malt.",
+        "price": "$6.99"
+      },
+      {
+        "name": "Sunny Side Up Hefeweizen",
+        "description": "A light and refreshing wheat beer with notes of banana and clove.",
+        "price": "$5.99"
+      }
+    ]
+  }
