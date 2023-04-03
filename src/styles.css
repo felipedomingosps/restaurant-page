@@ -174,3 +174,54 @@ footer {
 footer > a:visited {
     color: hsla(25, 99%, 8%, 1);
 }
+
+/* MENU */
+
+.menu {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    width: 70%;
+    margin: 0 auto;
+}
+
+tr {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.1rem;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+.food-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.food-description {
+    font-weight: 500;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+.food-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
