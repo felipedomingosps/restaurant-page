@@ -93,6 +93,7 @@ header {
 /* MAIN */
 main {
     background-color: var(--platinum);
+    min-height: 100vh;
 }
 
 .main__image {
@@ -224,4 +225,21 @@ h3 {
 .food-price {
     font-size: 1.1rem;
     font-weight: 700;
+}
+
+/* CONTACT */
+
+.contact {
+    max-width: 600px;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.contact__title {
+    margin: 0;
+}
+
+.contact__text:last-of-type {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
