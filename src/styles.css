@@ -231,12 +231,8 @@ h3 {
 
 .contact {
     max-width: 600px;
-    padding: 1rem 0rem;
     text-align: center;
-}
-
-.contact__title {
-    margin: 0;
+    padding-top: 0.05rem;
 }
 
 .contact__text:last-of-type {

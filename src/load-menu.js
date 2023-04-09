@@ -1,3 +1,5 @@
+import { loadFooter } from "./load-footer";
+
 function createSectionTable(section, sectionName) {
 
     const table = document.createElement('table');
@@ -28,6 +30,15 @@ function createSectionTable(section, sectionName) {
 }
 
 function loadMenu() {
+    const content = document.getElementById('content');
+
+    if (document.querySelector('main') === null) {
+        const main = document.createElement('main');
+        content.appendChild(main);        
+    }
+
+    document.querySelector('main').innerHTML = '';
+
     const data = require('./menu.json');
     const sections = Object.keys(data);
 
@@ -40,13 +51,13 @@ function loadMenu() {
     menu.setAttribute('id', 'menu');
     menu.appendChild(title);
 
-    content.appendChild(menu);
-
+    document.querySelector('main').appendChild(menu);
 
     sections.forEach(section => {
         createSectionTable(data[section], section);
     });
 
+    loadFooter();
 }
 
 

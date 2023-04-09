@@ -1,5 +1,6 @@
-function loadHeader(fatherElement) {
-    const element = `
+function loadHeader() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
     <header>
     <div class="box-content box-content--header">
         <div class="eggs">
@@ -10,15 +11,13 @@ function loadHeader(fatherElement) {
     </div>
     <nav class="box-content box-content--nav-bar">
         <ul class="nav-bar">
-            <li class="nav-bar__item nav-bar__item--current">Home</li>
-            <li class="nav-bar__item">Menu</li>
-            <li class="nav-bar__item">Contact</li>
+            <li class="nav-bar__item nav-bar__item--current" data-page="home">Home</li>
+            <li class="nav-bar__item" data-page="menu">Menu</li>
+            <li class="nav-bar__item" data-page="contact">Contact</li>
         </ul>
     </nav>
 </header>
 `;
-
-    fatherElement.innerHTML = element;
 }
 
 export {

@@ -1,10 +1,18 @@
+import { loadFooter } from "./load-footer";
+
 function loadContact() {
     const content = document.getElementById('content');
 
-    content.innerHTML += `
-    <main>
+    if (document.querySelector('main') === null) {
+        const main = document.createElement('main');
+        content.appendChild(main);      
+    }
+
+    document.querySelector('main').innerHTML = '';
+
+    document.querySelector('main').innerHTML = `
         <div class="contact box-content">
-            <h2 class="contact__title">CONTACT US</h2>
+            <h2 class="contact__title">Contact Us</h2>
             <p class="contact__text">Thanks for your interest in our restaurant. If you have any questions or concerns, please don't hesitate to reach out to us.</p>
         
             <div class="contact__section">
@@ -33,10 +41,9 @@ function loadContact() {
         
             <p class="contact__text">We look forward to hearing from you!</p>
         </div>
-    </main>
     `;
 
-
+    loadFooter();
 }
 
 export {

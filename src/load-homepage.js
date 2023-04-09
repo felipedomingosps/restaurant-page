@@ -1,6 +1,17 @@
-function loadHomePage(fatherElement) {
-    const content = `
-    <main>
+import { loadFooter } from "./load-footer";
+
+function loadHomePage() {
+
+    const content = document.getElementById('content');
+
+    if (document.querySelector('main') === null) {
+        const main = document.createElement('main');
+        content.appendChild(main);      
+    }
+
+    document.querySelector('main').innerHTML = '';
+
+    document.querySelector('main').innerHTML = `
     <div class="box-content box-content--main">
         <div class="main__image" alt="Two fried eggs on a plate."></div>
         <div class="main__quotation"><p class="quotation"> "Los Huevos Hermanos is egg-ceptional!" <span>- Bryan Cranston, renowned cook.</span></p></div>
@@ -19,16 +30,9 @@ function loadHomePage(fatherElement) {
             </div>
         </div>
 
-    </div>
-    
-</main>
+    </div>`;
 
-<footer>
-    2023 - <a href="https://github.com/felipedomingosps">@felipedomingosps</a>
-</footer>
-    `;
-
-    fatherElement.innerHTML += content;
+    loadFooter();
 }
 
 
